@@ -3,86 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulir Data Diri Mahasiswa</title>
+    <title>Soal Laporan Teori</title>
     <style>
         body {
-            font-family: 'Comic Sans MS', sans-serif;
-            background-color: #ffeb3b;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            font-family: Arial, sans-serif;
+            margin: 20px;
         }
-        .form-container {
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
+        h1, h2, h3 {
+            color: #2C3E50;
         }
-        h1 {
-            font-size: 24px;
-            color: #f44336;
+        ul {
             margin-bottom: 20px;
         }
-        label {
-            display: block;
-            margin-top: 10px;
-            color: #009688;
+        li {
+            margin: 5px 0;
         }
-        input, select {
+        table {
             width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        div a {
+            background-color: #ea9e5b;
+            color: #fff;
+            font-weight: 600;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
             padding: 10px;
-            margin-top: 5px;
-            border: 2px solid #8bc34a;
+            border: solid 1px #e17e27;
             border-radius: 8px;
-            font-size: 16px;
+            transition: all .5s ease;
         }
-        .submit-btn {
-            width: 100%;
-            padding: 12px;
-            margin-top: 20px;
-            background-color: #f44336;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        img {
-            width: 100%;
-            margin-top: 20px;
-            border-radius: 8px;
+        div a:hover {
+            background-color: #e17e27;
         }
     </style>
 </head>
 <body>
 
-    <div class="form-container">
-        <h1>Data Diri Mahasiswa</h1>
-        <form action="gif.html" method="get">
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" required>
+    <h1>Soal Laporan Teori</h1>
 
-            <label for="nim">NIM:</label>
-            <input type="text" id="nim" name="nim" required>
+    <h2>1. Pertanyaan Seputar Tag</h2>
+    <ul>
+        <li><span class="bold">a.</span> Apa yang dimaksud dengan tag pada HTML?</li>
+        <li><span class="bold">b.</span> Apa itu pembuka dan penutup tag? Apakah hal tersebut terdapat pada semua jenis tag?</li>
+    </ul>
 
-            <label for="jurusan">Jurusan:</label>
-            <select id="jurusan" name="jurusan" required>
-                <option value="">Pilih Jurusan</option>
-                <option value="Teknik Informatika">Teknik Informatika</option>
-                <option value="Sistem Informasi">Sistem Informasi</option>
-                <option value="Teknik Elektro">Teknik Elektro</option>
-                <option value="Manajemen">Manajemen</option>
-                <option value="Akuntansi">Akuntansi</option>
-            </select>
+    <h2>2. Pertanyaan Seputar Elemen</h2>
+    <ul>
+        <li><span class="bold">a.</span> Apa yang dimaksud dengan elemen?</li>
+        <li><span class="bold">b.</span> Apa yang dimaksud dengan tagname, attribute, dan content pada elemen?</li>
+        <li><span class="bold">c.</span> Apakah elemen dapat ditumpuk? Apa yang terjadi bila demikian?</li>
+    </ul>
 
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
+    <h2>3. Pertanyaan Seputar Anchor</h2>
+    <ul>
+        <li><span class="bold">a.</span> Apa yang dimaksud dengan anchor?</li>
+        <li><span class="bold">b.</span> Bagaimana caranya anchor dapat berfungsi, baik dari sisi pendefinisian ataupun pengaplikasiannya?</li>
+    </ul>
 
+    <h2>4. Pertanyaan Seputar Multimedia</h2>
+    <h3>A. Text</h3>
+    <ul>
+        <li><span class="bold">1.</span> Sebutkan tag yang dapat digunakan untuk memanipulasi konten teks pada HTML, serta jelaskan fungsinya!</li>
+        <li><span class="bold">2.</span> Sebutkan tag yang dapat digunakan untuk memanipulasi struktur konten teks pada HTML!</li>
+    </ul>
 
+    <h3>B. Image</h3>
+    <ul>
+        <li><span class="bold">3.</span> Apabila sebuah tag image tidak menampilkan gambar sebagaimana seharusnya, apa saja yang mungkin menyebabkan hal tersebut?</li>
+        <li><span class="bold">4.</span> Apabila ternyata ada teks yang menggantikan gambar tersebut, apa yang sebenarnya terjadi? Jelaskan!</li>
+    </ul>
+
+    <h3>C. Audio</h3>
+    <ul>
+        <li><span class="bold">5.</span> Bagaimana caranya kita dapat memasukkan audio source dari web (non-lokal)? Jelaskan!</li>
+    </ul>
+
+    <h3>D. Video</h3>
+    <ul>
+        <li><span class="bold">6.</span> Apa yang biasanya terjadi apabila atribut autoplay pada tag video tidak berjalan? Apa yang harus dilakukan agar atribut tersebut dapat berfungsi dengan semestinya?</li>
+    </ul>
+
+    <div>
+        <a href="formMhs.html">Go To Form Page</a>
+    </div>
 </body>
 </html>
